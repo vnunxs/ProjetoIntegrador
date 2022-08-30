@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eueue"
+    android:orientation="vertical"
+    tools:context=".MenuPrincipalActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="410dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lanche" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtNomePrato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubunturegular"
+            android:gravity="center"
+            android:shadowColor="#43A047"
+            android:shadowRadius="10"
+            android:text="X-Frango"
+            android:textColor="#FFC107"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center"
+            android:shadowColor="#FFC107"
+            android:shadowRadius="2"
+            android:text="R$ 40,00"
+            android:textColor="#4CAF50"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDiminuirQuantidade"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:backgroundTint="#FF2C00"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtQuantidade"
+                android:layout_width="56dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="#fff"
+                android:backgroundTint="@color/black"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnAumentarQuantidade"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:backgroundTint="#307333"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="25dp">
+
+        <TextView
+            android:id="@+id/txtAdicional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginBottom="2dp"
+            android:text="PERSONALIZE SEU LANCHE:"
+            android:textColor="#FFFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="6dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="65dp"
+            app:srcCompat="@drawable/cheddar"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="58dp" />
+
+        <TextView
+            android:id="@+id/txtCheddar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cheddar"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDiminuirQuantidade1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:backgroundTint="#FF2C00"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtQuantidade1"
+                android:layout_width="56dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="#fff"
+                android:backgroundTint="@color/black"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnAumentarQuantidade1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:backgroundTint="#307333"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="65dp"
+            android:src="@drawable/maionese"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="126dp" />
+
+        <TextView
+            android:id="@+id/txtMaionese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maionese"
+            android:layout_gravity="center_vertical"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="68dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDiminuirQuantidade2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:backgroundTint="#FF2C00"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtQuantidade2"
+                android:layout_width="56dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="#fff"
+                android:backgroundTint="@color/black"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnAumentarQuantidade2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:backgroundTint="#307333"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="65dp"
+            app:srcCompat="@drawable/alface"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="186dp" />
+
+        <TextView
+            android:id="@+id/txtAlface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Alface"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="94dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDiminuirQuantidade3"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:backgroundTint="#FF2C00"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtQuantidade3"
+                android:layout_width="56dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="#fff"
+                android:backgroundTint="@color/black"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnAumentarQuantidade3"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:backgroundTint="#307333"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#A6000000"
+            android:text="Confirmar"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

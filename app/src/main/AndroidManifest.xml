@@ -14,13 +14,37 @@
         android:theme="@style/Theme.semBarra"
         tools:targetApi="31">
         <activity
-            android:name=".MenuActivity"
+            android:name=".MesasActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MenuPratoActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".MenuPrincipalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlterarSenhaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditarPerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1385" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable/borda_botao_quantidade.xml" value="0.1565" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable/borda_login.xml" value="0.1565" />
         <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable/edtmenulayout.xml" value="0.161" />
         <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable/fundo_model.xml" value="0.1385" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable/ic_baseline_arrow_forward_ios.xml" value="0.149" />
         <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable/ic_baseline_house.xml" value="0.17" />
         <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable/ic_baseline_menu.xml" value="0.17" />
         <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable/ic_baseline_search.xml" value="0.17" />
@@ -15,9 +18,23 @@
         <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable/menu_image_shape.xml" value="0.161" />
         <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable/menu_img_layer.xml" value="0.161" />
         <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable/menu_item_cardapio.xml" value="0.1" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable/shape_edt_mesa.xml" value="0.1565" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable/thump.xml" value="0.149" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/drawable/track.xml" value="0.149" />
         <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/layout/activity_main.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/layout/alterar_senha_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/layout/editar_perfil_layout.xml" value="0.25" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/layout/header_navegation_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/layout/login_layout.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/layout/menu_layout.xml" value="0.25" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/layout/menu_prato_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/layout/menu_principal_layout.xml" value="0.25" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/layout/menu_settings_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/layout/mesas_layout.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/layout/modelo_cardapio.xml" value="0.1" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/layout/modelo_mesa.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/layout/settings_layout.xml" value="0.25" />
+        <entry key="..\:/Users/vinicius.nsantos6/Documents/ProjetoAndroid/ProjetoIntegrador/app/src/main/res/menu/menu_settings.xml" value="0.271875" />
       </map>
     </option>
   </component>

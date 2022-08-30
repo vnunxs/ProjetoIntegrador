@@ -56,7 +56,6 @@
             android:id="@+id/IconHouseMenu"
             android:layout_width="70dp"
             android:layout_height="70dp"
-
             android:src="@drawable/ic_baseline_house" />
 
         <ImageView
@@ -98,7 +97,20 @@
         android:textColor="@color/white"
         android:textSize="15sp"
 
+        /><Button
+        android:id="@+id/btnTesteMesa"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+        android:backgroundTint="#EE0000"
+        android:text="Mesa Selecionada: "
+        android:textColor="@color/white"
+        android:textSize="15sp"
+
         />
+
 
 
 </LinearLayout>

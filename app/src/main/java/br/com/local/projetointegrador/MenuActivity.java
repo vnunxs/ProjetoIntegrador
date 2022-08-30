@@ -2,11 +2,13 @@ package br.com.local.projetointegrador;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -16,6 +18,14 @@ import org.w3c.dom.Text;
 
 public class MenuActivity extends AppCompatActivity {
     GridView gridView;
+    ImageView IconSettingsMenu;
+    Button botaoMesa;
+
+    //Salvando o número da mesa nessa janela
+
+    Intent getMesa = getIntent();
+    String nMesa = getMesa.getStringExtra("sendMesa");
+
 
     int imgCardapio[] = {
             R.drawable.hamburguermodel, R.drawable.pizzamodel, R.drawable.batatamodel,
@@ -26,7 +36,7 @@ public class MenuActivity extends AppCompatActivity {
             "Zinguer Burguer", "Pizza Peperone", "Batata Média",
             "Zinguer Burguer", "Pizza Peperone", "Batata Média"};
 
-    String precoProduto[] = {"R$ 40,00", "R$ 35,00", "R$ 15,00","R$ 40,00", "R$ 35,00", "R$ 15,00",
+    String precoProduto[] = {"R$ 40,00", "R$ 35,00", "R$ 15,00", "R$ 40,00", "R$ 35,00", "R$ 15,00",
             "R$ 40,00", "R$ 35,00", "R$ 15,00"};
 
 
@@ -35,11 +45,30 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_layout);
 
+        IconSettingsMenu = findViewById(R.id.IconSettingsMenu);
+        botaoMesa = findViewById(R.id.btnTesteMesa);
         gridView = findViewById(R.id.GriedViewMenu);
+        botaoMesa.setText("Mesa Selecionada: "+nMesa);
+        botaoMesa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),MesasActivity.class);
+                startActivity(intent);
 
+            }
+        });
         AdaptadorCard adapter = new AdaptadorCard();
 
         gridView.setAdapter(adapter);
+
+        IconSettingsMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
+            }
+        });
+
+
     }
 
     public class AdaptadorCard extends BaseAdapter {

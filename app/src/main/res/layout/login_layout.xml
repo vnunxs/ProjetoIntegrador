@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_auau"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="120dp"
+            android:shadowColor="@color/black"
+            android:shadowRadius="50"
+            android:text="All QrCode"
+            android:textColor="@color/white"
+            android:textSize="70sp" />
+
+
+        <EditText
+            android:id="@+id/edtUsuario"
+            android:layout_width="400dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/borda_login"
+            android:hint="Insira seu e-mail ou telefone"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="400dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/borda_login"
+            android:hint="Insira sua senha"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chbLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:buttonTint="#ff2c00"
+                android:checked="false"
+                android:text="Lembrar credenciais"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txtEsqueciMinhaSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Esqueci minha senha"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="#D0FF2C00"
+            android:text="Login"
+            android:textColor="#CEFFFFFF"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</ScrollView>
