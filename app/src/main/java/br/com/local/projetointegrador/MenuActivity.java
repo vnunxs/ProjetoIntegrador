@@ -6,23 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class MenuActivity extends AppCompatActivity {
     GridView gridView;
     ImageView IconSettingsMenu;
-    Button botaoMesa;
+
 
     //Salvando o número da mesa nessa janela
-
+    Button botaoMesa;
     Intent getMesa = getIntent();
     String nMesa = getMesa.getStringExtra("sendMesa");
 
@@ -46,8 +42,9 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.menu_layout);
 
         IconSettingsMenu = findViewById(R.id.IconSettingsMenu);
-        botaoMesa = findViewById(R.id.btnTesteMesa);
         gridView = findViewById(R.id.GriedViewMenu);
+
+        botaoMesa = findViewById(R.id.btnTesteMesa);
         botaoMesa.setText("Mesa Selecionada: "+nMesa);
         botaoMesa.setOnClickListener(new View.OnClickListener() {
             @Override

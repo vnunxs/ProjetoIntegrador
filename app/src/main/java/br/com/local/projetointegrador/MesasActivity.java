@@ -16,8 +16,8 @@ import android.widget.Toast;
 public class MesasActivity extends AppCompatActivity {
     GridView gridViewMesas;
     String[] mesaSelec;
-    String txtNumMesa[]={
-            "Mesa 1","Mesa 2","Mesa 3","Mesa 4","Mesa 5","Mesa 6","Mesa 7","Mesa 8",
+    String txtNumMesa[] ={
+            "Mesa 1", "Mesa 2", "Mesa 3", "Mesa 4", "Mesa 5", "Mesa 6", "Mesa 7", "Mesa 8",
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,14 +31,12 @@ public class MesasActivity extends AppCompatActivity {
         gridViewMesas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent ii = new Intent(MesasActivity.this, MenuActivity.class);
+                Intent intent = new Intent(getApplicationContext(),MenuActivity.class);
                 //Passando valores de uma janela para outra
                 mesaSelec = txtNumMesa[i].split(" ");
-                ii.putExtra("sendMesa", mesaSelec[1]);
-                //Toast.makeText(MesasActivity.this, mesaSelec[1], Toast.LENGTH_SHORT).show();
-                finish();
-                startActivity(ii);
-
+                intent.putExtra("sendMesa", mesaSelec[1]);
+                Toast.makeText(MesasActivity.this, mesaSelec[1], Toast.LENGTH_SHORT).show();
+                startActivity(intent);
             }
         });
     }
